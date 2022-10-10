@@ -1,6 +1,6 @@
 # Swiftbook
-![54920927-8ffada00-4f15-11e9-8353-8e0c9b87f6c6](https://user-images.githubusercontent.com/110721351/194865439-759ae9e4-d6f8-479d-8b29-3df5b13346d5.png)
 
+<img width="562" alt="Снимок экрана 2022-10-10 в 18 24 36" src="https://user-images.githubusercontent.com/110721351/194865761-429f7b86-4518-4518-8685-7dab964d5873.png">
 
 Swiftbook-Courses
 
