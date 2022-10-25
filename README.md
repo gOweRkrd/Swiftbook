@@ -22,6 +22,7 @@ UIKit from completed courses Swiftbook
 
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-21 at 14 29 02](https://user-images.githubusercontent.com/110721351/197150625-31004190-c69b-44db-bf03-a6ea2e5fa957.gif)
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-23 at 22 22 52](https://user-images.githubusercontent.com/110721351/197409187-452bcacd-1258-420c-aaed-69da1623a684.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-10-21 at 17 23 13](https://user-images.githubusercontent.com/110721351/197696824-103a9133-5437-4f75-b6f5-860b34b4c9c3.gif)
 
 
 
