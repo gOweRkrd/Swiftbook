@@ -29,6 +29,11 @@ Networking from completed courses Swiftbook
 
 ![Simulator Screen Recording - iPhone 13 - 2022-10-21 at 17 35 00](https://user-images.githubusercontent.com/110721351/197747339-3451bd77-61a9-4766-98cc-eab529338155.gif)
 
+MVVM from completed courses Swiftbook
+
+![Simulator Screen Recording - iPhone 13 Pro - 2022-10-25 at 14 21 37](https://user-images.githubusercontent.com/110721351/197749143-567dcc97-8a06-4d7c-800d-d4460067ca92.gif)
+<img width="360" alt="Снимок экрана 2022-10-25 в 14 23 42" src="https://user-images.githubusercontent.com/110721351/197749256-0fed1368-1e53-4210-a9bd-6b29549f290c.png">
+
 
 
 
