@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Car" representedClassName="Car" syncable="YES" codeGenerationType="class">
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="lastStarted" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="mark" optional="YES" attributeType="String"/>
+        <attribute name="model" optional="YES" attributeType="String"/>
+        <attribute name="myChoice" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="rating" optional="YES" attributeType="Double" minValueString="0" maxValueString="10" defaultValueString="5" usesScalarValueType="NO"/>
+        <attribute name="timesDriven" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="tintColor" optional="YES" attributeType="Transformable"/>
+    </entity>
+</model>
