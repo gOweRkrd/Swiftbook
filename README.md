@@ -35,7 +35,7 @@ UIKit from completed courses Swiftbook
 
 
 
-Networking from completed courses Swiftbook
+Networking from completed courses Swiftbook 
 
 ![Simulator Screen Recording - iPhone 13 - 2022-10-21 at 17 35 00](https://user-images.githubusercontent.com/110721351/197747339-3451bd77-61a9-4766-98cc-eab529338155.gif)
 
@@ -43,6 +43,17 @@ MVVM from completed courses Swiftbook
 
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-25 at 14 21 37](https://user-images.githubusercontent.com/110721351/197749143-567dcc97-8a06-4d7c-800d-d4460067ca92.gif)
 <img width="360" alt="Снимок экрана 2022-10-25 в 14 23 42" src="https://user-images.githubusercontent.com/110721351/197749256-0fed1368-1e53-4210-a9bd-6b29549f290c.png">
+
+
+The basics CoredData Framework from completed courses Swiftbook 
+
+![Simulator Screen Recording - iPhone 14 Pro - 2022-11-21 at 18 40 22](https://user-images.githubusercontent.com/110721351/203082878-901c5d18-da91-497e-9089-f086715d4687.gif)
+![Simulator Screen Recording - iPhone 14 Pro - 2022-11-21 at 18 45 32](https://user-images.githubusercontent.com/110721351/203083939-9cbdb098-bfe7-49b6-9bf4-fc25efbd6850.gif)
+![Simulator Screen Recording - iPhone 14 Pro - 2022-11-21 at 18 44 04](https://user-images.githubusercontent.com/110721351/203083964-a2ac3699-f434-40e7-b3e3-017728222b28.gif)
+
+
+
+
 
 
 
