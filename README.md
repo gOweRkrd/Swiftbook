@@ -13,6 +13,9 @@ My first app - a couple of small projects to learn the basics of swift, xcode, u
 
 
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-13 at 20 05 15](https://user-images.githubusercontent.com/110721351/195848710-8ff55b0b-a228-4a26-8386-8668bfa9c878.gif)
+
+Working with the API from completed courses Swiftbook
+
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-19 at 14 55 46](https://user-images.githubusercontent.com/110721351/196645134-8f1dab55-9c95-4e1b-ae33-38cff767a3bf.gif)
 
 UIKit from completed courses Swiftbook
