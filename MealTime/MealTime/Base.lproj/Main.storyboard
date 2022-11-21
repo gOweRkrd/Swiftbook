@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dMm-2U-VVm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meal time-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MealTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meal" translatesAutoresizingMaskIntoConstraints="NO" id="CEe-pl-BM8">
+                                <rect key="frame" x="-4" y="64" width="383" height="142.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CEe-pl-BM8" secondAttribute="height" multiplier="600:223" id="ez6-fD-nuU"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FTt-aI-a5P">
+                                <rect key="frame" x="-4" y="205.5" width="383" height="461.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rRJ-F2-0SB"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gRO-Ol-sca"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FTt-aI-a5P" secondAttribute="trailing" constant="-20" id="EDz-RQ-Syu"/>
+                            <constraint firstItem="CEe-pl-BM8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MGe-kI-Kib"/>
+                            <constraint firstItem="CEe-pl-BM8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Qr6-p5-zcj"/>
+                            <constraint firstItem="FTt-aI-a5P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="epp-LF-toz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CEe-pl-BM8" secondAttribute="trailing" constant="-20" id="ksp-MM-g03"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FTt-aI-a5P" secondAttribute="bottom" id="mAs-ff-v1s"/>
+                            <constraint firstItem="FTt-aI-a5P" firstAttribute="top" secondItem="CEe-pl-BM8" secondAttribute="bottom" constant="-1" id="qMr-sg-hfl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meal time" id="Zee-4G-jaD">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="mTa-P7-T4a">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="BYZ-38-t0r" id="Uhp-b2-0KA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="FTt-aI-a5P" id="sfb-84-HVH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1259" y="360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yGi-Ef-3jJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dMm-2U-VVm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y1h-ez-9AL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cuk-uL-LZH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UvD-AY-KQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="meal" width="601" height="223"/>
+    </resources>
+</document>
