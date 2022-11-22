@@ -4,8 +4,8 @@
 
 ## Table of contents
 
-1. [My first projects](#My-first-projects)
-2. [UIKit](#UIKit-from-completed-courses-Swiftbook)
+1. [UIKit](#UIKit-from-completed-courses-Swiftbook)
+2. [My first projects](#My-first-projects)
 3. [Working with the API](#Working-with-the-API-from-completed-courses-Swiftbook)
 4. [Networking](#Networking-from-completed-courses-Swiftbook )
 5. [MVVM](#MVVM-from-completed-courses-Swiftbook)
