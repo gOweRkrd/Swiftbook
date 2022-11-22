@@ -15,16 +15,6 @@
 
 Swiftbook-Courses
 
-
-#### My first projects
-
-![Simulator Screen Recording - iPhone 13 Pro - 2022-10-20 at 14 27 51](https://user-images.githubusercontent.com/110721351/196897340-fbb236e3-0e54-4888-a34a-30395dd7de66.gif)
-![Simulator Screen Recording - iPhone 13 Pro - 2022-10-20 at 14 12 26](https://user-images.githubusercontent.com/110721351/196897372-563c6db7-d63e-4a2a-b68f-4318b379b962.gif)
-![Simulator Screen Recording - iPhone 13 Pro - 2022-10-13 at 20 05 15](https://user-images.githubusercontent.com/110721351/195848710-8ff55b0b-a228-4a26-8386-8668bfa9c878.gif)
-____
-[:arrow_up:Table of contents](#Table-of-contents)
-___
-
 #### UIKit from completed courses Swiftbook
 
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-19 at 15 08 13](https://user-images.githubusercontent.com/110721351/196648178-b5e4d972-8728-469e-acea-0b29ae4a408b.gif)
@@ -36,6 +26,15 @@ ___
 <img width="300" alt="Снимок экрана 2022-10-27 в 12 54 22" src="https://user-images.githubusercontent.com/110721351/198239918-89fe6fe7-a804-4042-8c03-295c412deca7.png">
 
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-21 at 17 28 57](https://user-images.githubusercontent.com/110721351/198630853-1cfa8a50-289e-461e-8bfe-dbbd38592c43.gif)
+____
+[:arrow_up:Table of contents](#Table-of-contents)
+___
+
+#### My first projects
+
+![Simulator Screen Recording - iPhone 13 Pro - 2022-10-20 at 14 27 51](https://user-images.githubusercontent.com/110721351/196897340-fbb236e3-0e54-4888-a34a-30395dd7de66.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-10-20 at 14 12 26](https://user-images.githubusercontent.com/110721351/196897372-563c6db7-d63e-4a2a-b68f-4318b379b962.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-10-13 at 20 05 15](https://user-images.githubusercontent.com/110721351/195848710-8ff55b0b-a228-4a26-8386-8668bfa9c878.gif)
 ____
 [:arrow_up:Table of contents](#Table-of-contents)
 ___
