@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-1. [My first projects](#My-first-app - a-couple-of-small-projects-to-learn-the-basics-of-swift,-xcode,-uikit)
+1. [My first projects](#My first app - a couple of small projects to learn the basics of swift, xcode, uikit)
 2. [UIKit](#UIKit)
 3. [Working with the API](#Working-with-the-API)
 4. [Networking](#Networjing)
