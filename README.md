@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-1. [My first projects](#My first projects)
+1. [My first projects](#My-first-projects)
 2. [UIKit](#UIKit-from-completed-courses-Swiftbook)
 3. [Working with the API](#Working-with-the-API-from-completed-courses-Swiftbook)
 4. [Networking](#Networking-from-completed-courses-Swiftbook )
