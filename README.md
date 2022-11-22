@@ -1,5 +1,3 @@
-# Swiftbook
-
 <img width="300" alt="Снимок экрана 2022-10-10 в 18 24 36" src="https://user-images.githubusercontent.com/110721351/194865761-429f7b86-4518-4518-8685-7dab964d5873.png">
 
 ## Table of contents
