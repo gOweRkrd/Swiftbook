@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-1. [My first projects](#My-first-app--a-couple-of-small-projects-to-learn-the-basics-of-swift,-xcode,-uikit)
+1. [My first projects](#My first projects)
 2. [UIKit](#UIKit-from-completed-courses-Swiftbook)
 3. [Working with the API](#Working-with-the-API-from-completed-courses-Swiftbook)
 4. [Networking](#Networking-from-completed-courses-Swiftbook )
@@ -16,7 +16,7 @@
 Swiftbook-Courses
 
 
-#### My first app - a couple of small projects to learn the basics of swift, xcode, uikit
+#### My first projects
 
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-20 at 14 27 51](https://user-images.githubusercontent.com/110721351/196897340-fbb236e3-0e54-4888-a34a-30395dd7de66.gif)
 ![Simulator Screen Recording - iPhone 13 Pro - 2022-10-20 at 14 12 26](https://user-images.githubusercontent.com/110721351/196897372-563c6db7-d63e-4a2a-b68f-4318b379b962.gif)
