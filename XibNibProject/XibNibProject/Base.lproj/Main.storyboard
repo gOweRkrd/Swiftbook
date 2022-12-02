@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="guC-8j-SBH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hl8-gN-xH3">
+            <objects>
+                <navigationController id="guC-8j-SBH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f3a-lX-Aw9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GFa-jZ-LPD" kind="relationship" relationship="rootViewController" id="5Tq-G6-ZCS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPh-Vv-hDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-538" y="152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tgu-q8-TuD">
+            <objects>
+                <viewController id="GFa-jZ-LPD" customClass="ViewController" customModule="XibNibProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WFS-85-aVy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqC-Ys-AWO">
+                                <rect key="frame" x="108.5" y="438.5" width="197" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="PS1-cT-eUg"/>
+                                    <constraint firstAttribute="width" constant="197" id="vVL-Lh-mk4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonDidTap:" destination="GFa-jZ-LPD" eventType="touchUpInside" id="3hY-t0-QyY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B3g-Ek-daL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cqC-Ys-AWO" firstAttribute="centerX" secondItem="B3g-Ek-daL" secondAttribute="centerX" id="RLk-34-qbe"/>
+                            <constraint firstItem="cqC-Ys-AWO" firstAttribute="centerY" secondItem="B3g-Ek-daL" secondAttribute="centerY" id="sz9-WC-70s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TQi-Fr-JL0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gfb-aN-cg3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327.536231884058" y="150.66964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
