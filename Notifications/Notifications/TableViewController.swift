@@ -3,8 +3,9 @@ import UIKit
 class TableViewController: UITableViewController {
     
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
+    let notifications = Notifications()
     
-    let notifications = ["Local Notification",
+    let notificationsType = ["Local Notification",
                          "Local Notification with Action",
                          "Local Notification with Content",
                          "Push Notification with  APNs",
@@ -14,13 +15,13 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notifications.count
+        return notificationsType.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        cell.textLabel?.text = notifications[indexPath.row]
+        cell.textLabel?.text = notificationsType[indexPath.row]
         cell.textLabel?.textColor = .white
         
         return cell
@@ -33,14 +34,14 @@ class TableViewController: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.textLabel?.textColor = .red
         
-        let notificationType = notifications[indexPath.row]
+        let notificationType = notificationsType[indexPath.row]
         
         let alert = UIAlertController(title: notificationType,
                                       message: "After 5 seconds " + notificationType + " will appear",
                                       preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-            self.appDelegate?.scheduleNotification(notificationType: notificationType)
+            self.notifications.scheduleNotification(notificationType: notificationType)
         }
         
         alert.addAction(okAction)

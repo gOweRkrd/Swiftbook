@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50FF1A61298BB0720070DCEB /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FF1A60298BB0720070DCEB /* Notifications.swift */; };
 		A8217DE020DBD56300895832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8217DDF20DBD56300895832 /* AppDelegate.swift */; };
 		A8217DE520DBD56300895832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE320DBD56300895832 /* Main.storyboard */; };
 		A8217DE720DBD56400895832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE620DBD56400895832 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50FF1A60298BB0720070DCEB /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		A8217DDC20DBD56300895832 /* Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8217DDF20DBD56300895832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8217DE420DBD56300895832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				A8217DDF20DBD56300895832 /* AppDelegate.swift */,
+				50FF1A60298BB0720070DCEB /* Notifications.swift */,
 				A8217DF320DCAF4E00895832 /* TableViewController.swift */,
 				A8217DE320DBD56300895832 /* Main.storyboard */,
 				A8217DE620DBD56400895832 /* Assets.xcassets */,
@@ -91,11 +94,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Alexey Efimov";
 				TargetAttributes = {
 					A8217DDB20DBD56300895832 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = "";
 					};
 				};
 			};
@@ -135,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FF1A61298BB0720070DCEB /* Notifications.swift in Sources */,
 				A8217DE020DBD56300895832 /* AppDelegate.swift in Sources */,
 				A8217DF420DCAF4E00895832 /* TableViewController.swift in Sources */,
 			);
@@ -188,6 +193,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -248,6 +254,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -288,7 +295,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AlexanderKosyakov.Notifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -305,7 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AlexanderKosyakov.Notifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
