@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didRegisterForRemoteNotificationsWithDeviceToken
                      deviceToken: Data) {
         let tokenParts = deviceToken.map { data -> String in
-            return String(format: "%02.2hhz", data)
+            return String(format: "%02.2hhx", data)
         }
         let token = tokenParts.joined()
         print("Device token: \(token)")
