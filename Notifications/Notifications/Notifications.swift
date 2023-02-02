@@ -20,6 +20,12 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
     func getNotificationSettings() {
         notificationCenter.getNotificationSettings { (settings) in
             print("Notification settings: \(settings)")
+            // регистрация нашего приложения для получения пуш уведомлений
+            guard settings.authorizationStatus == .authorized else { return }
+            
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
         }
     }
     
@@ -42,9 +48,9 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
         
         do {
             let attachment = try UNNotificationAttachment(
-            identifier: "planet",
-            url: url,
-            options: nil)
+                identifier: "planet",
+                url: url,
+                options: nil)
             
             content.attachments = [attachment]
         } catch {
