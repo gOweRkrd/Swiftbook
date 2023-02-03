@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CALayerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prog" translatesAutoresizingMaskIntoConstraints="NO" id="Qqh-PB-lxc">
+                                <rect key="frame" x="87.5" y="41" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qqh-PB-lxc" secondAttribute="height" multiplier="1:1" id="OfY-R7-4Q9"/>
+                                    <constraint firstAttribute="height" constant="200" id="ib7-rg-KQ7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Y4-y6-p6F">
+                                <rect key="frame" x="119" y="537" width="137" height="89"/>
+                                <color key="backgroundColor" red="0.30734436200569726" green="0.69822731598984777" blue="0.26999067148183969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Y4-y6-p6F" secondAttribute="height" multiplier="137:89" id="AMf-ks-h2C"/>
+                                    <constraint firstAttribute="height" constant="89" id="kDg-NQ-Jwp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Tap me!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mg-en-Utw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75981166099509001" green="0.89853051655823579" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Y4-y6-p6F" secondAttribute="bottom" constant="41" id="CRX-xV-F3c"/>
+                            <constraint firstItem="5Y4-y6-p6F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HUf-hM-B9b"/>
+                            <constraint firstItem="Qqh-PB-lxc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q7m-9W-uV8"/>
+                            <constraint firstItem="Qqh-PB-lxc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="eo3-20-F4S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="5Y4-y6-p6F" id="uQA-9B-IUZ"/>
+                        <outlet property="imageView" destination="Qqh-PB-lxc" id="7OM-vv-M1l"/>
+                        <segue destination="QOs-tZ-jqO" kind="show" identifier="showSecondScreen" id="QUO-rc-djm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="35"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="fob-iX-ubG">
+            <objects>
+                <viewController id="QOs-tZ-jqO" customClass="SecondViewController" customModule="CALayerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P3L-DB-Vjc"/>
+                        <viewControllerLayoutGuide type="bottom" id="WGf-4X-ACi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SGZ-vu-93B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-8i-2Sl">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.84976143376059732" green="1" blue="0.88721763823472222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="42g-6v-MpV"/>
+                                    <constraint firstAttribute="width" secondItem="XBb-8i-2Sl" secondAttribute="height" multiplier="1:1" id="sMF-yx-1cX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-Ov-uZX">
+                                <rect key="frame" x="87.5" y="537" width="200" height="89"/>
+                                <color key="backgroundColor" red="0.30734436199999998" green="0.69822731599999999" blue="0.2699906715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fk2-Ov-uZX" secondAttribute="height" multiplier="200:89" id="PPV-qm-9zd"/>
+                                    <constraint firstAttribute="height" constant="89" id="YGf-WO-f5C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Take the cup">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76024037599563599" green="0.89662289619445801" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WGf-4X-ACi" firstAttribute="top" secondItem="fk2-Ov-uZX" secondAttribute="bottom" constant="41" id="I6C-zw-3wd"/>
+                            <constraint firstItem="fk2-Ov-uZX" firstAttribute="centerX" secondItem="SGZ-vu-93B" secondAttribute="centerX" id="YSh-X4-CNX"/>
+                            <constraint firstItem="XBb-8i-2Sl" firstAttribute="centerY" secondItem="SGZ-vu-93B" secondAttribute="centerY" id="ct5-Dg-QoK"/>
+                            <constraint firstItem="XBb-8i-2Sl" firstAttribute="centerX" secondItem="SGZ-vu-93B" secondAttribute="centerX" id="hpD-RV-eJv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="fk2-Ov-uZX" id="McA-Th-Ibn"/>
+                        <outlet property="imageView" destination="XBb-8i-2Sl" id="pqH-dt-9m6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNp-n9-Cj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="34.632683658170919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cup" width="200" height="200"/>
+        <image name="prog" width="200" height="200"/>
+    </resources>
+</document>
