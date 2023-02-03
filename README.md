@@ -48,8 +48,6 @@ ____
 ___
 
 
-
-
 #### Networking from completed courses Swiftbook 
 
 ![Simulator Screen Recording - iPhone 13 - 2022-10-21 at 17 35 00](https://user-images.githubusercontent.com/110721351/197747339-3451bd77-61a9-4766-98cc-eab529338155.gif)
@@ -99,7 +97,8 @@ ___
 
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-02-03 at 17 04 39](https://user-images.githubusercontent.com/110721351/216573339-447568a7-826f-42c1-848f-3291e2aa1457.gif)
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-02-03 at 17 03 14](https://user-images.githubusercontent.com/110721351/216573406-0a9db487-9fe9-4f88-95f1-73d038a4f6bc.gif)
-![Simulator Screen Shot - iPhone 14 Pro - 2023-02-03 at 17 04 04](https://user-images.githubusercontent.com/110721351/216573441-3906ccaf-1939-425b-877f-3ca5e9776999.png)
+<img width="290" alt="Снимок экрана 2022-10-25 в 14 23 42" src="https://user-images.githubusercontent.com/110721351/216573441-3906ccaf-1939-425b-877f-3ca5e9776999.png">
+
 ____
 [:arrow_up:Table of contents](#Table-of-contents)
 ___
