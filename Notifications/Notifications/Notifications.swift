@@ -1,11 +1,11 @@
 import UIKit
 import UserNotifications
-import Firebase
+//import Firebase
 
 class Notifications: NSObject,UNUserNotificationCenterDelegate {
     
     let notificationCenter = UNUserNotificationCenter.current()
-    let messagingDelegate = Messaging.messaging()
+//    let messagingDelegate = Messaging.messaging()
     
     // запрос у пользователей подтверждения на отправку уведомлений
     func requestAutorization() {
@@ -44,22 +44,22 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
         content.categoryIdentifier = userAction
         
         // добавляем картинку в наше уведомление
-        guard let path = Bundle.main.path(forResource: "planet", ofType: "png") else { return }
+//        guard let path = Bundle.main.path(forResource: "planet", ofType: "png") else { return }
+//
+//        let url = URL(fileURLWithPath: path)
+//
+//        do {
+//            let attachment = try UNNotificationAttachment(
+//                identifier: "planet",
+//                url: url,
+//                options: nil)
+//
+//            content.attachments = [attachment]
+//        } catch {
+//            print("The attachment cold not be loaded")
+//        }
         
-        let url = URL(fileURLWithPath: path)
-        
-        do {
-            let attachment = try UNNotificationAttachment(
-                identifier: "planet",
-                url: url,
-                options: nil)
-            
-            content.attachments = [attachment]
-        } catch {
-            print("The attachment cold not be loaded")
-        }
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
         let identifiere = "Local Notification"
         let request = UNNotificationRequest(identifier: identifiere,
                                             content: content,
@@ -121,8 +121,8 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
         }
 }
 
-extension Notifications: MessagingDelegate {
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-        print("\nFirebase registration token: \(fcmToken)\n")
-    }
-}
+//extension Notifications: MessagingDelegate {
+//    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+//        print("\nFirebase registration token: \(fcmToken)\n")
+//    }
+//}

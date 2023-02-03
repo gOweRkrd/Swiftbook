@@ -1,6 +1,6 @@
 import UIKit
 import UserNotifications
-import Firebase
+//import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,9 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notifications.requestAutorization()
         notifications.notificationCenter.delegate = notifications
         
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
         
-        notifications.messagingDelegate.delegate = notifications
+//        notifications.messagingDelegate.delegate = notifications
         return true
     }
     // обнуление количества не прочитанных сообщений
