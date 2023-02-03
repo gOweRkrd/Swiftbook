@@ -71,6 +71,8 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         let category = UNNotificationCategory(identifier: "User Actions",
                                               actions: actions,
                                               intentIdentifiers: [],
+                                              hiddenPreviewsBodyPlaceholder: nil,
+                                              categorySummaryFormat: "%u новых уведомлений в разделе%@",
                                               options: [])
         
         UNUserNotificationCenter.current().setNotificationCategories([category])

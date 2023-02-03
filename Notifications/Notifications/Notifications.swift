@@ -1,11 +1,11 @@
 import UIKit
 import UserNotifications
-//import Firebase
+import Firebase
 
 class Notifications: NSObject,UNUserNotificationCenterDelegate {
     
     let notificationCenter = UNUserNotificationCenter.current()
-//    let messagingDelegate = Messaging.messaging()
+    let messagingDelegate = Messaging.messaging()
     
     // запрос у пользователей подтверждения на отправку уведомлений
     func requestAutorization() {
@@ -43,24 +43,30 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
         content.badge = 1
         content.categoryIdentifier = userAction
         
-        // добавляем картинку в наше уведомление
-//        guard let path = Bundle.main.path(forResource: "planet", ofType: "png") else { return }
-//
-//        let url = URL(fileURLWithPath: path)
-//
-//        do {
-//            let attachment = try UNNotificationAttachment(
-//                identifier: "planet",
-//                url: url,
-//                options: nil)
-//
-//            content.attachments = [attachment]
-//        } catch {
-//            print("The attachment cold not be loaded")
-//        }
+        content.threadIdentifier = notificationType
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
-        let identifiere = "Local Notification"
+        content.summaryArgumentCount = 10
+        content.summaryArgument = notificationType
+        
+        // добавляем картинку в наше уведомление
+        guard let path = Bundle.main.path(forResource: "planet", ofType: "png") else { return }
+
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            let attachment = try UNNotificationAttachment(
+                identifier: "planet",
+                url: url,
+                options: nil)
+
+            content.attachments = [attachment]
+        } catch {
+            print("The attachment cold not be loaded")
+        }
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        
+        let identifiere = UUID().uuidString
         let request = UNNotificationRequest(identifier: identifiere,
                                             content: content,
                                             trigger: trigger)
@@ -71,20 +77,20 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
             }
         }
         // создание действий пользователей в уведомлении (можно отображать до 4 действий)
-//        let snoozeAction = UNNotificationAction(identifier: "Snooze",
-//                                                title: "Snooze",
-//                                                options: [])
-//
-//        let deleteAction = UNNotificationAction(identifier: "Delete",
-//                                                title: "Delete",
-//                                                options: [.destructive])
-//
-//        let category = UNNotificationCategory(identifier: userAction,
-//                                              actions: [snoozeAction, deleteAction],
-//                                              intentIdentifiers: [],
-//                                              options: [])
-//
-//        notificationCenter.setNotificationCategories([category])
+        let snoozeAction = UNNotificationAction(identifier: "Snooze",
+                                                title: "Snooze",
+                                                options: [])
+
+        let deleteAction = UNNotificationAction(identifier: "Delete",
+                                                title: "Delete",
+                                                options: [.destructive])
+
+        let category = UNNotificationCategory(identifier: userAction,
+                                              actions: [snoozeAction, deleteAction],
+                                              intentIdentifiers: [],
+                                              options: [])
+
+        notificationCenter.setNotificationCategories([category])
     }
     
     // получать уведомления,когда приложение находится в переднем плане
@@ -126,8 +132,8 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
     }
 }
 
-//extension Notifications: MessagingDelegate {
-//    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-//        print("\nFirebase registration token: \(fcmToken)\n")
-//    }
-//}
+extension Notifications: MessagingDelegate {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        print("\nFirebase registration token: \(fcmToken)\n")
+    }
+}
