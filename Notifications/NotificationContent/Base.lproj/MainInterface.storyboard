@@ -29,7 +29,7 @@
                                             <constraint firstAttribute="width" constant="50" id="maQ-2S-s61"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="❤️"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="🤍"/>
                                         <connections>
                                             <action selector="likeButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Ydp-TG-EKC"/>
                                         </connections>

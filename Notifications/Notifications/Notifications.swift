@@ -9,7 +9,7 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
     
     // запрос у пользователей подтверждения на отправку уведомлений
     func requestAutorization() {
-        notificationCenter.requestAuthorization(options: [.alert,.sound,.badge]) { (granted,
+        notificationCenter.requestAuthorization(options: [.alert,.sound,.badge,.providesAppNotificationSettings, .provisional]) { (granted,
                                                                                     error) in
             print("Permission granted: \(granted)")
             
@@ -38,7 +38,7 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
         let userAction = "User Action"
         
         content.title = notificationType
-        content.body = "This is example how to create" + notificationType
+        content.body = "Summer Time" + notificationType
         content.sound = UNNotificationSound.default
         content.badge = 1
         content.categoryIdentifier = userAction
@@ -71,20 +71,20 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
             }
         }
         // создание действий пользователей в уведомлении (можно отображать до 4 действий)
-        let snoozeAction = UNNotificationAction(identifier: "Snooze",
-                                                title: "Snooze",
-                                                options: [])
-        
-        let deleteAction = UNNotificationAction(identifier: "Delete",
-                                                title: "Delete",
-                                                options: [.destructive])
-        
-        let category = UNNotificationCategory(identifier: userAction,
-                                              actions: [snoozeAction, deleteAction],
-                                              intentIdentifiers: [],
-                                              options: [])
-        
-        notificationCenter.setNotificationCategories([category])
+//        let snoozeAction = UNNotificationAction(identifier: "Snooze",
+//                                                title: "Snooze",
+//                                                options: [])
+//
+//        let deleteAction = UNNotificationAction(identifier: "Delete",
+//                                                title: "Delete",
+//                                                options: [.destructive])
+//
+//        let category = UNNotificationCategory(identifier: userAction,
+//                                              actions: [snoozeAction, deleteAction],
+//                                              intentIdentifiers: [],
+//                                              options: [])
+//
+//        notificationCenter.setNotificationCategories([category])
     }
     
     // получать уведомления,когда приложение находится в переднем плане
@@ -119,6 +119,11 @@ class Notifications: NSObject,UNUserNotificationCenterDelegate {
             }
             completionHandler()
         }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        appDelegate?.openSettings()
+    }
 }
 
 //extension Notifications: MessagingDelegate {

@@ -39,6 +39,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      error: Error) {
         print("Failed to register: \(error)")
     }
+    
+    func openSettings() {
+      let storyboard = UIStoryboard(name: "Settigns", bundle: nil)
+        let settings = storyboard.instantiateViewController(identifier: "Settigns")
+        window?.rootViewController = settings
+    }
 }
 
 
